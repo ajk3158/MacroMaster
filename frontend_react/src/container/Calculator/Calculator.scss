@@ -1,0 +1,128 @@
+.app__wrapper{
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+.row{
+    margin: 0.5rem 0rem !important;
+}
+
+.results-text{
+    color: var(--black-color) !important;
+}
+
+.app__calculator {
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__calculator-section {
+    margin: 1.5rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__calculator-results {
+    margin: 1.5rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+.app__calculator-form-text {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary-text-color);
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px black;
+}
+
+.app__calculator-weight-form{
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app__calculator-weight-inputs{
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__calculator-form-field{
+    margin: 1rem 0 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+}
+
+input[type=range]{
+    margin: 1rem 0 1rem;
+    height: 110%;
+    width: 200%;
+}
+
+input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb, input[type=range]::-ms-thumb, input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track, input[type=range]::-ms-track {
+    background-color: var(--primary-text-color) !important;
+}
+
+input[type=number]::placeholder{
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.5;
+    font-family: Georgia, serif !important;
+}
+
+input[type=radio]{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right:0.5rem;
+}
+
+.app__calculator-button {
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2rem;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: var(--brown-color);
+        color: #fff;
+    }
+
+    @media screen and (min-width: 2000px) {
+        padding: 1rem 2rem;
+        border-radius: 0.85rem;
+    }
+}
+
+.app__calculator-food-box{
+    background: var(--white-color);
+    border: var(--white-color);
+    border-radius: 15px;
+    box-shadow: var(--transition-color);
+    flex-direction: row;
+    padding: 1rem 2rem;
+    width: auto;
+}
